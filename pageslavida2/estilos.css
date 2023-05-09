@@ -138,6 +138,7 @@ section {
     position: relative;
     font-size: 16px;
     margin: 20px 0 40px;
+    
 }
 .Div-img img {
     width: 35vw; 
@@ -481,6 +482,11 @@ form {
     /* background: var(--bg-color); */
 }
 
+/* @keyframes swoRight {
+    100% {
+        width: 0;
+    }
+} */
 
 @media (max-width: 1200px ) {
     html{ font-size: 55%;}
