@@ -86,11 +86,13 @@ section {
     color: #00abf0;
 }
 #menu-icon {
+    display: flex;
     font-size: 3.6rem;
     color: var(--text-color);
+}
+#menu-icon:nth-child(2) {
     display: none;
 }
-
 .social-media a {
     position: relative;
     display: inline-flex;
@@ -117,6 +119,7 @@ section {
 }
 
 .Div-img {
+
     position: relative;
     width: 100%;
     height: 90%; 
@@ -479,7 +482,8 @@ form {
 .header {
    
 
-    /* background: var(--bg-color); */
+    background: var(--bg-color);
+    height: 9.2rem;
 }
 
 /* @keyframes swoRight {
@@ -511,9 +515,7 @@ form {
 
 
 @media (max-width: 768px ) {
-    #menu-icon {
-        display: block;
-    }
+ 
 
     .navbar {
         position: absolute;
@@ -525,12 +527,12 @@ form {
         background: var(--bg-color);
         border-top: .1rem solid rgba(0,0,0, .2);
         box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
-        display: flex;
+        display: none;
         align-items: start;
         justify-content: left;
         flex-direction: column;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
         gap: 8px;
-        display: none;
     }
     .navbar .active {
         display: block;
@@ -591,4 +593,36 @@ form {
        flex-direction: column;
         grid-template-columns:  repeat(1, 1fr);
     }  
+    .home h2 {
+        font-size: 2rem;
+    }
+    .home h1 {
+        font-size: 3.5rem;
+    }
+    .services h2{
+        margin-bottom: 2rem;
+    }
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       ;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p{
+      text-align: center;
+      margin-top: 2rem;
+    }
+}
+
+@media (max-width: 450px ) {
+    html{ font-size: 50%;}
+
+    .contato form .input-box input {
+        width: 100%;
+    }
 }

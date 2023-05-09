@@ -8,6 +8,7 @@
     <title>Lavida</title>
     <link rel="stylesheet" href="estilos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
 
 </head>
 
@@ -16,9 +17,10 @@
         <a href="#" class="logo">
             <img src="./img/lavida-2.png" alt="">
         </a>
-        <i class="bx bx-menu" id="menu-icon"></i>
+        <i onclick="CloseIcons()" class="bx bx-x closeIcons" id="menu-icon"></i>
+        <i onclick="OpenIcons()" class="bx bx-menu openIcons" id="menu-icon"></i>
 
-        <nav class="navbar">
+        <nav class="navbar" >
             <a href="#home" class="active">Home</a>
             <a href="#about">Sobre Nos</a>
             <a href="#services">Serviços</a>
