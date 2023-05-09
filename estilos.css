@@ -193,6 +193,12 @@ strong {
 .btn-box:hover {
     box-shadow: none;
 }
+.btn-box button {
+    /* color: #052570; */
+    color: var(--primary-color);
+   font-weight: 700;
+    background: none;
+}
 
 .my-btn {
     display: inline-block;
@@ -211,12 +217,6 @@ strong {
 .my-btn:hover {
     box-shadow: none;
 }
-
-
-
-
-
-
 
 .about {
     display: flex;
