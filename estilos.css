@@ -620,6 +620,15 @@ form {
         box-shadow:0 0 3rem var( --main-color);
        
     }
+
+    .div-produto-cell {
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
 }
 
 @media (max-width: 617px ) {
@@ -675,12 +684,28 @@ form {
         box-shadow:0 0 3rem var( --main-color);
        
     }
+    .div-produto-cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
 }
 
 @media (max-width: 450px ) {
     html{ font-size: 50%;}
 
     .contato form .input-box input {
+        width: 100%;
+    }
+
+    .div-produto-cell {
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
         width: 100%;
     }
 }
@@ -729,10 +754,35 @@ form {
 }
 .Produtos img {
    
-    width: 25vw; 
+    width: 20vw; 
     margin: 2rem;
     border-radius: 10%;
     background:  var(--main-color);
     box-shadow:0 0 3rem var( --main-color);
    
+}
+
+.container-de-produtos {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.div-produto-cell {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 40%;
+}
+
+
+.container-de-produtos {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
