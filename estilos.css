@@ -44,8 +44,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    /* background-color: rgb(97, 83, 83); */
 }
+
+
 
 .header {
     position: fixed;
@@ -106,8 +108,8 @@ section {
     background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    font-weight: 20px;
-    font-size: 2rem;
+    font-weight: 40px;
+    font-size: 3rem;
     color: var(--main-color);
     text-decoration: none;
     z-index: 1;
