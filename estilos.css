@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 58e1b1dca25d78f7e96e925e910b2f08218fdc29
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +26,7 @@
     --text-color:#ededed;
     --primary-text-color:#fff;
     
+<<<<<<< HEAD
     
     --tw-ring-offset-color: #fff; 
     --tw-ring-color: rgba(59,130,246,.5);
@@ -27,6 +34,8 @@
     --tw-ring-shadow: 0 0 #0000;
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000
+=======
+>>>>>>> 58e1b1dca25d78f7e96e925e910b2f08218fdc29
 }
 
 html {
@@ -48,8 +57,10 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    /* background-color: rgb(97, 83, 83); */
 }
+
+
 
 .header {
     position: fixed;
@@ -110,8 +121,8 @@ section {
     background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 50%;
-    font-weight: 20px;
-    font-size: 2rem;
+    font-weight: 40px;
+    font-size: 3rem;
     color: var(--main-color);
     text-decoration: none;
     z-index: 1;
@@ -140,7 +151,7 @@ section {
     bottom: 0;
     width: 100%;
     height: 70%;
-    background: linear-gradient(0deg,#081b29 30%, transparent);
+    background: linear-gradient(0deg,#081b29 15%, transparent);
     
 }
 
@@ -153,7 +164,7 @@ section {
 .Div-img img {
     width: 35vw; 
     border-radius: 100%;
-    box-shadow: 0 0 3rem var(--main-color);
+    /* box-shadow: 0 0 3rem var(--main-color); */
 }
 
 .Div-img:hover {
@@ -399,6 +410,16 @@ span {
 
 .portfolio-leyer h2 {
     font-size: 3rem;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.Portfolio-Construindo {
+    /* background: red; */
+    margin: 5rem;
+    color: #0ef;
+}
+.Portfolio h3 {
+    font-size: 2rem;
 }
 .portfolio-leyer p {
     font-size: 1.6rem;
@@ -498,6 +519,10 @@ form {
         width: 0;
     }
 } */
+
+.navbar {
+    display: none;
+}
 
 @media (max-width: 1200px ) {
     html{ font-size: 55%;}
@@ -629,6 +654,7 @@ form {
         height: auto;
         width: 100%;
     }
+    
 }
 
 @media (max-width: 617px ) {
@@ -639,6 +665,7 @@ form {
        flex-direction: column;
         grid-template-columns:  repeat(1, 1fr);
     }  
+ 
     .home h2 {
         font-size: 2rem;
     }
@@ -786,3 +813,4 @@ form {
     align-items: center;
     justify-content: space-between;
 }
+
