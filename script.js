@@ -2,10 +2,10 @@ const menuIcon = document.querySelector('#menu-icon');
 const openIcons = document.querySelector('.openIcons');
 const closeIcons = document.querySelector('.closeIcons');
 
- const entrarNoZap = () => {
+//  const entrarNoZap = () => {
     
   
- }
+//  }
 
 
 // menuIcon.onclick = () => {
