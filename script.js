@@ -1,6 +1,13 @@
 const menuIcon = document.querySelector('#menu-icon');
 const openIcons = document.querySelector('.openIcons');
 const closeIcons = document.querySelector('.closeIcons');
+
+ const entrarNoZap = () => {
+    
+  
+ }
+
+
 // menuIcon.onclick = () => {
 //     menuIcon.classList.toggle('bx-x');
 //     navebar.classList.toggle('active');
