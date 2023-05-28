@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> 58e1b1dca25d78f7e96e925e910b2f08218fdc29
 * {
     margin: 0;
     padding: 0;
@@ -27,14 +24,7 @@
     --primary-text-color:#fff;
     
     
-    --tw-ring-offset-color: #fff; 
-    --tw-ring-color: rgba(59,130,246,.5);
-    --tw-ring-offset-shadow: 0 0 #0000;
-    --tw-ring-shadow: 0 0 #0000;
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000
-=======
->>>>>>> 58e1b1dca25d78f7e96e925e910b2f08218fdc29
+   
 }
 
 html {
@@ -91,19 +81,20 @@ section {
     height: 60px;
 }
 
-.navbar a {
-    font-size: 18px;
+
+.navlinks a {
+    font-size: 1.7rem;
     color: #ededed;
     font-weight: 500;
-    /* text-decoration: none; */
+  
     margin-left: 35px;
     transition: 0.5s;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navlinks a:hover,
+.navlinks a.active {
     color: #00abf0;
-}
+} 
 
 #menu-icon {
     display: flex;
@@ -155,7 +146,7 @@ section {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 70%;
+    height: 35%;
     background: linear-gradient(0deg,#081b29 30%, transparent);
     
 }
@@ -630,7 +621,14 @@ form {
 }
 
 /* .empresa   */
-
+.container-de-empresa{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5rem;
+}
 
 .empresa-content h5 {
 
@@ -655,7 +653,7 @@ form {
 }
 
 
-
+/* 
 .container-de-empresa .wrappe-empresa {
  
     display: flex;
@@ -667,7 +665,7 @@ form {
 
 
 
-}
+} */
 .wrappe-empresa p {
 
     font-size: 1.6rem; 
@@ -686,9 +684,9 @@ form {
 }
 
 .navigation {
-    display: none;
+    display: none !important;
     cursor: pointer;
-  
+    transition:all 0.3s ease-in-out;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -696,7 +694,7 @@ form {
     height: 4rem;
     width: 4rem;
     font-size: 30px;
-    background-color: red;
+
 }
 /* .bar {
     display: block;
@@ -766,37 +764,63 @@ form {
 @media (max-width: 768px) {
 
 
-    /* .navbar {
+     .navlinks {
         position: absolute;
         top: 100%;
-        left: 0;
+        left:0;
         width: 100%;
-        height: auto !important;
-        
-        height: 200px;
-        padding: 1rem 3%;
+        animation: identifier;
+        transform: translateY(0);
+        opacity: 1;
+        height: 50rem;
+        padding: 5rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
-        align-items: start;
-        justify-content: left;
-        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-        gap: 8px;
-    } */
+        gap: 4rem;
+        
+    } 
 
-    .navbar .active {
+    @keyframes identifier {
+      to {
+        transform: translateY(-100%);
+        transition: all 0.8s ease-in-out;
+        opacity: 0;
+      }
+    }
+    .navlinks a {
+        border-bottom: 2px solid rgba(0, 0, 0, .2);
+        width: 100%;
+    }
+
+    .navlinks .active {
         display: block;
     }
 
-    .navba a {
+    .navlinks a {
         display: block;
 
         font-size: 2rem;
         margin: 3rem 0;
     }
 
+    .navigation {
+        display: flex !important;
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 4rem;
+        width: 4rem;
+        font-size: 30px;
+        
+    }
     .home {
         flex-direction: column;
     }
@@ -912,7 +936,7 @@ form {
 display: none;
 }
 
-}
+
 
 @media (max-width: 617px) {
     .prpfile-container {
@@ -1033,4 +1057,5 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
 }
