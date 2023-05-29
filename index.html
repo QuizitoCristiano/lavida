@@ -286,28 +286,52 @@
     </section>
 
     <!-- Contata -->
-    <section class="contato" id="contato">
+    <section class="contato" id="contato" >
         <h2 class="heading">Entre Em Contato <span>Com agente!</span></h2>
 
-        <form action="#">
+        <form action="#" onclick="validaForm()">
             <div class="input-box">
-                <input type="text" placeholder="Digite seu nome completo">
-                <input type="text" placeholder="Digite o seu E-mail">
+                <div class="div-validar">
+
+                    <input type="text" placeholder="Digite seu nome completo" id="nome">
+                    <p id="mensagem"></p>
+                </div>
+                <div class="div-validar">
+
+                    <input type="text" placeholder="Digite o seu E-mail"  id="email">
+                    <p id="sms"></p>
+                </div>
 
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Digite o seu número do celular">
-                <input type="text" placeholder="Digite sua senha">
+                <div class="div-validar">
+
+                    <input type="number" placeholder="Digite o seu número do celular"id="celular" oninput="validarCelular(this.value)">
+                    <p id="mesageCellPhone"></p>
+                </div>
+                <div class="div-validar">
+
+                    <input type="password" placeholder="Digite sua senha" class="password">
+                    <p id="mensagemSenha"></p>
+                </div>
 
             </div>
             <div class="input-box">
-                <input type="text" placeholder="Confirme a sua senha">
-                <input type="text" placeholder="Digite o seu endereço">
+                <div class="div-validar">
+
+                    <input type="password" placeholder="Confirme a sua senha" class="userConfirmPassword">
+                    <p id="msgConfirmPassword"></p>
+                </div>
+                <div class="div-validar">
+
+                    <input type="text" placeholder="Digite o seu endereço" class="userAddress">
+                    <p id="mensagemEdereco"></p>
+                </div>
 
             </div>
             <textarea name="" id="" cols="30" rows="10">Sua Mensagem</textarea>
 
-            <botton type="submit" class="btn-box"> Enviar Dados</botton>
+            <botton  type="submit" class="btn-box" > Enviar Dados</botton>
         </form>
     </section>
 

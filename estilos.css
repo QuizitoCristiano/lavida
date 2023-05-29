@@ -489,7 +489,20 @@ form {
     cursor: pointer;
 }
 
+.div-validar {
 
+    width: 100%;
+    /* padding: 1.5rem; */
+    font-size: 1.6rem;
+    color: var(--text-color);
+    /* background: red; */
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+}
+
+.div-validar input {
+    width: 100% !important;
+}
 /* footer */
 
 .footer {
